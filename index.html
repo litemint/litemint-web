@@ -1,0 +1,774 @@
+﻿<!doctype html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127548934-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-127548934-1');
+        gtag('config', 'AW-772332148');
+    </script>
+
+    <title>Litemint - Secure, peer-to-peer, multi-currency crypto wallet, instant game platform, marketplace</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Litemint is a secure, peer-to-peer, multi-currency crypto wallet, instant game platform and marketplace." />
+    <meta name="author" content="Litemint LLC - Frederic Rezeau" />
+    <meta name="copyright" content="Copyright (c) 2018 Litemint LLC. Litemint is a trademark of Litemint LLC, Lewes, Delaware, USA. All rights reserved." />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css?v=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="index.css?v=1.1" />
+
+    <meta property="og:url" content="https://litemint.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Litemint is a secure, peer-to-peer, multi-currency crypto wallet, instant game platform and marketplace." />
+    <meta property="og:description" content="Litemint is a secure, peer-to-peer, multi-currency crypto wallet, instant game platform and marketplace." />
+    <meta property="og:image" content="https://litemint.com/img/facebook002.png" />
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=1611750365749969&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <section id="home" class="hero is-white">
+        <header>
+            <nav id="navbar" class="navbar is-fixed-top site-navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <div class="navbar-item">
+                            <a href="#home">
+                                <svg class="is-framed-7" width="48" height="48" id="litemint" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 952.9 961.36"><title>Litemint Logo</title><path d="M895.65,129.64v1c-166.36,26.43-183.28,231.41-308,372.24C431.23,679.49,254.25,666.62,162.33,884.32c-16.72-426.95,309.32-666,375.33-702.67-189,55-441.34,368.61-424.28,671.06C92.86,823.24-156.76,367.51,259.23,88.84,426.57-23.26,700,9.94,895.65,129.64Z" transform="translate(-20.46 -20.13)" style="fill:#2ac1bc;fill-rule:evenodd" /><path d="M827.31,197C934.47,286,1000,448.31,963,639.56L827.31,605.91C870.24,444,765.69,324.14,748.78,315.25,749,304.69,801.7,211.66,827.31,197ZM718.18,370.32C905.81,601.16,615.31,910.36,362.24,714,472.82,656.83,653,538.2,718.18,370.32Zm98.93,267.2,136.67,33.66C852.26,944.34,595.86,1008.83,434.65,972l38.76-136.66C639.09,863,777,749.05,817.11,637.52ZM307.16,748.68c41.87,34.76,81.39,62.39,134.63,80.57L403,963.87C339.11,948.8,252.16,896,211.29,854.75,227.22,815.33,282.32,761.46,307.16,748.68Z" transform="translate(-20.46 -20.13)" style="fill:#ffdd57;fill-rule:evenodd" /></svg>
+                            </a>
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <a class="is-static is-not-decorated button is-outlined" style="background-color:#fff;border:0px;"><span class="is-size-3 part1">LITE</span><span class="is-size-3 part2">MINT</span></a>
+                                </p>
+                                <!--<p class="control">
+                                    <a href="https://litemint.app" class="is-not-decorated button is-info">
+                                        <span class="is-size-6">.app</span>
+                                    </a>
+                                </p>-->
+                            </div>
+                        </div>
+                        <div class="navbar-burger" data-target="navbar-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="navbar-menu site-menu">
+                        <div class="navbar-start"></div>
+                        <div class="navbar-end">
+                            <span class="navbar-item">
+                                <a class="button is-primary is-outlined" href="#getwallet">
+                                    <span class="icon">
+                                        <i class="fa fa-download"></i>
+                                    </span>
+                                    <span>GET LITEMINT</span>
+                                </a>
+                            </span>
+                            <a class="navbar-item" href="#news">What's New</a>
+                            <a class="navbar-item" href="https://blog.litemint.com" target="_blank">Blog</a>
+                            <a class="navbar-item" href="#contact">Contact</a>
+                            <span class="navbar-item">
+                                <a class="button is-outlined" href="https://github.com/litemint/litemint">
+                                    <span class="icon">
+                                        <i class="fa fa-github"></i>
+                                    </span>
+                                    <span>Development</span>
+                                </a>
+                            </span>
+                            <span class="navbar-item">
+                                <a class="button is-info is-outlined" href="https://litemint.app">
+                                    <span class="icon">
+                                        <i class="fa fa-sign-in"></i>
+                                    </span>
+                                    <span>LAUNCH APP</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section class="section hero">
+        <div class="container">
+            <div id="modalbox" class="modal">
+                <div class="modal-background close-modal"></div> <!-- add is-active class to enable -->
+                <div class="modal-content">
+                    <div class="notification content has-text-black has-text-centered">
+                        <button class="delete close-modal"></button>
+                        <p class="has-text-primary is-size-4">
+                            <b>Early Bird?</b>
+                        </p>
+                        <p>
+                            This website is getting ready to host <b>Litemint</b>, a secure, peer-to-peer and multi-asset wallet, instant game platform and marketplace for mobile and web.<br />Stay tuned on Twitter!
+                            <div class="is-offset">
+                                <a href="https://twitter.com/FredericRezeau?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true" data-size="large">
+                                    Follow @FredericRezeau
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-tablet">
+                <div class="column is-7 anim">
+                    <a href="#getwallet">
+                        <img class="rounded" src="img/litemintprom.png?v=1.0" />
+                    </a>
+                </div>
+                <div class="column is-5">
+                    <div style="overflow:hidden; width:300px;">
+                        <div style="float:left;margin-right:4px;"><a href="https://twitter.com/share" class="twitter-share-button" data-text="Litemint: a secure, peer-to-peer, trading platform and #crypto #stellar wallet." data-url="https://litemint.com" data-count="horizontal" data-via="LitemintHQ" data-related="fredericrezeau:Creator of Litemint" data-size="large">Tweet</a></div><div class="fb-like" data-href="https://www.facebook.com/152882068888670" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+                    </div>
+                    <br /><br />
+                    <article class="message is-borderless is-primary">
+                        <div class="content message-body">
+                            <span class="tag is-primary is-large" style="display:none;"><span id="wallet-count">8850</span>&nbsp;Wallets Created</span>
+                            <p class="title is-size-2">Put your <span style="color: #2ac1bc;">crypto</span> into <span style="color: #ffdd57;">play</span></p>
+                            <h4 class="title is-4" style="color:#01a6dd;">
+                                Now over 15000 mobile and web users!
+                            </h4>
+                            <h4 class="title is-5">
+                                Litemint is a secure and friendly multi-currency crypto wallet, instant game platform and marketplace.
+                            </h4>
+                            <p>Built on Stellar, Litemint offers a peer-to-peer and secure wallet to send, receive and trade any digital asset while providing access to a seamlessly connected store and marketplace for games.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero">
+        <div class="container">
+            <div class="content has-text-dark">
+                <p class="title is-size-2 has-text-centered"><span class="command">DISCOVER LITEMINT</span></p>
+            </div>
+            <div class="columns has-text-dark">
+                <div class="column has-text-centered">
+                    <p class="title is-size-5">You Own Your Keys!</p>
+                    <img class="is-radius-10" style="max-width:300px;" src="img/future-badge.png?v=1.0" />
+                    <p>Your account keys always stay with you! Litemint accounts are <a href="#security">standard, secure</a> and compatible with all mainstream services and hardware wallets following the BIP32/BIP44 protocol so you can recover and import them independently - anytime.</p>
+                </div>
+                <div class="column has-text-centered">
+                    <p class="title is-size-5">Gaming and Marketplace</p>
+                    <img class="is-radius-10" style="max-width:300px;" src="img/market-badge.png?v=1.0" />
+                    <p>Litemint instant games platform is now Live. <a href="https://litemint.app">Play our FREE games</a> right in Litemint for a chance to earn prizes. Enjoy seamless, peer-to-peer and instant in-app purchases. Easily sell game collectibles on the marketplace.</p>
+                </div>
+                <div class="column has-text-centered">
+                    <p class="title is-size-5">Multi-assets</p>
+                    <img class="is-radius-10" style="max-width:300px;" src="img/bridge-badge.png?v=1.0" />
+                    <p>We are breaking all barriers between currencies. Litemint is a global service to trade, send and receive any digital asset and crypto. We believe in an open world of interconnected blockchains and assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero">
+        <div class="container">
+            <div class="columns is-tablet">
+                <div class="column is-6 anim">
+                    <!--  <object type="image/svg+xml" data="img/rightimg.svg"></object> -->
+                    <img src="img/feats.png?v=1.0" />
+                </div>
+                <div class="column is-6">
+                    <article class="message is-primary">
+                        <div class="content message-body">
+                            <p class="title is-size-2"><span class="command">FEATURES</span></p>
+                            <div class="field is-grouped is-grouped-multiline">
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-dark">Transaction Fee</span>
+                                        <span id="fee" class="tag is-info"></span>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-dark">Transaction Time</span>
+                                        <span class="tag is-success">2-5 seconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Send, receive, trade any asset and currency.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Publish and play instant games with seamless, peer-to-peer in-app purchases.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Use Stellar friendly addresses (e.g. Send to fred*litemint.com).
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Backup phrases to recover your accounts.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Charts and real-time market prices.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Multi-account management.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                PIN protection with PBKDF2 and keyboard secure randomizer.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Watch-only accounts.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Anchor verification from issuer domain and seamless bridges.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                QR Code scanning.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Public address sharing from your favorite social apps.
+                            </p>
+                            <p>
+                                <span class="has-text-primary">
+                                    <i class="fa fa-check-circle"></i>
+                                </span>
+                                Multi-language support.
+                            </p>
+                        </div>
+                    </article>
+                    <a href="#getwallet" class="button is-primary">Download Now</a>
+                    <p class="is-offset">or <a href="#contact">Learn more!</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero">
+        <div class="container">
+            <div class="columns is-tablet">
+                <div class="column is-6 anim">
+                    <img src="img/security.png?v=1.0" />
+                </div>
+                <div class="column is-6">
+                    <article class="message is-primary">
+                        <div id="security" class="content message-body">
+                            <p class="title is-size-2"><span class="command">SECURITY</span></p>
+                            <div class="field is-grouped is-grouped-multiline">
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-dark">Standards</span>
+                                        <span class="tag is-info">BIP-44, SEP-05, SLIP-10</span>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <div class="tags has-addons">
+                                        <span class="tag is-dark">Security</span>
+                                        <span class="tag is-warning">PBKDF2, AES</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>We believe in open standards, open security and open-source.</p>
+                            <br />
+                            <h4 class="title is-5">Decentralized</h4>
+                            Your account keys always stay with you, transactions are always signed on your end, yet we made sure that technology does not get in the way of a smooth experience.<br /><br />
+                            <h4 class="title is-5">Strong Client-Side Cryptography</h4>
+                            Litemint uses Password-Based Key Derivation Function 2 (PBKDF2) for increased resistance against brute-force attacks. Your local data is further encrypted using the NIST Advanced Encryption Standard (AES).<br /><br />
+                            <h4 class="title is-5">Open Source</h4>
+                            For transparency, Litemint source code is freely available under the community-friendly and open-source <a href="https://github.com/litemint/litemint/blob/master/LICENSE" target="_blank">MIT license.</a><br /><br />
+                        </div>
+                    </article>
+                    <a href="https://github.com/litemint/litemint" target="_blank" class="button is-primary is-outlined">
+                        <span class="icon">
+                            <i class="fa fa-github"></i>
+                        </span>
+                        <span>View Source Code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="getwallet" class="section features">
+        <div class="container">
+            <p class="title is-size-2"><span class="command">GET LITEMINT</span></p>
+            <div class="content">
+                We are dedicated to offer a secure, seamless and open experience across all supported platforms including web, desktop, mobile and tablet. The choice is yours!
+            </div>
+            <div class="columns is-tablet is-multiline">
+                <div class="column is-4">
+                    <div class="content box is-borderless has-text-centered">
+                        <p class="title is-size-4 ">Use it Now</p>
+                        <p>You don't need to download anything to use Litemint Wallet.<br /><br />Jump straight into the crypto world from the confort of your browser. <br /><br />Visit:</p>
+                        <div style="display: table; margin: 0 auto;">
+                            <div id="app-launcher" class="field has-addons" style="cursor:pointer;">
+                                <p class="control">
+                                    <a class="is-static is-not-decorated button is-outlined" style="background-color:#fff"><span class="is-size-3 part1">LITE</span><span class="is-size-3 part2">MINT</span></a>
+                                </p>
+                                <p class="control">
+                                    <a class="is-not-decorated button is-info">
+                                        <span class="is-size-4">.app</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="is-divider-vertical" data-content="OR"></div>
+                <div class="column is-3">
+                    <div class="content box is-borderless">
+                        <p class="title is-size-4 has-text-centered">Download it</p>
+                        <nav class="level is-mobile">
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <span class="icon is-small"><i class="fa fa-android fa-2x" aria-hidden="true"></i></span><br />
+                                    <span><a href="https://play.google.com/store/apps/details?id=com.litemint.app">Android</a></span>
+                                </div>
+                            </div>
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <div>
+                                        <span class="icon is-small"><i class="fa fa-apple fa-2x" aria-hidden="true"></i></span><br />
+                                        <span><a href="https://itunes.apple.com/app/litemint/id1454801150">iOS</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <nav class="level is-mobile">
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <span class="icon is-small"><i class="fa fa-windows fa-2x" aria-hidden="true"></i></span><br />
+                                    <span><a href="https://github.com/litemint/litemint/releases">Windows</a></span>
+                                </div>
+                            </div>
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <span class="icon is-small"><i class="fa fa-windows fa-2x" aria-hidden="true"></i></span><br />
+                                    <span><a href="https://github.com/litemint/litemint/releases">Setup</a></span>
+                                </div>
+                            </div>
+                        </nav>
+                        <nav class="level is-mobile">
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <span class="icon is-small"><i class="fa fa-linux fa-2x" aria-hidden="true"></i></span><br />
+                                    <span><a href="https://github.com/litemint/litemint/releases">Linux</a></span>
+                                </div>
+                            </div>
+                            <div class="level-item has-text-centered">
+                                <div>
+                                    <span class="icon is-small"><i class="fa fa-apple fa-2x" aria-hidden="true"></i></span><br />
+                                    <span><a href="https://github.com/litemint/litemint/releases">Mac OS</a></span>
+                                </div>
+                            </div>
+                        </nav>
+                        <p class="has-text-centered">Join us on <a href="https://twitter.com/LitemintHQ" target="_blank">Twitter</a> and <a href="https://www.facebook.com/litemint" target="_blank">Facebook</a> to keep updated on our latest platform releases.</p>
+                    </div>
+                </div>
+                <div class="is-divider-vertical" data-content="OR"></div>
+                <div class="column is-3">
+                    <div class="content box is-borderless has-text-centered">
+                        <p class="title is-size-4">Build it Yourself</p>
+                        <p>Looking to run Litemint as full self-hosted solution on your private infrastructure?</p>
+                        <p>
+                            Litemint source code is available and released under the developer, business and community-friendly open-source <a href="https://github.com/litemint/litemint/blob/master/LICENSE" target="_blank">MIT</a> license.
+                        </p>
+                        <p>
+                            <a class="button is-primary" href="https://github.com/litemint/litemint" target="_blank">
+                                <span class="icon">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                                <span>Source on GitHub</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="section hero">
+        <div class="container">
+            <div class="columns is-tablet">
+                <div class="column is-6">
+                    <p class="title is-4">News:</p>
+                    <article class="message is-info">
+                        <div class="content message-body">
+                            <p class="title is-5">We Got Game!</p>
+                            <p>
+                                Litemint 1.3 is LIVE so, grab your Gamer ID now and climb the leaderboards!
+                                <ul>
+                                    <li>Instant Games Platform</li>
+                                    <li><a href="https://blog.litemint.com/play-litemint-slice-to-enter-the-daily-draw/">Read more on the blog!</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="message is-info">
+                        <div class="content message-body">
+                            <p class="title is-5">On Your Mark, Get Set, Trade!</p>
+                            <p>
+                                Litemint 1.2 now available on iTunes and Android!
+                                <ul>
+                                    <li>Stellar DEX Trading</li>
+                                    <li><a href="https://github.com/litemint/litemint/releases/tag/v1.2.0">Read more...</a></li>
+                                </ul>
+                            </p>
+                            <a href="https://itunes.apple.com/app/litemint/id1454801150">
+                                <img src="img/badge_appstore.png" />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.litemint.app">
+                                <img src="img/badge_playstore.png" />
+                            </a>
+                        </div>
+                    </article>
+                    <article class="message is-info">
+                        <div class="content message-body">
+                            <p class="title is-5">Litemint Web Wallet release!</p>
+                            <p>
+                                Litemint is now available right in your browser (recommended Chrome or Firefox). <br /><br />Visit <a href="https://litemint.app">https://litemint.app</a> to start your journey into the crypto world!
+
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-4">Timeline:</p>
+                    <div class="timeline is-centered">
+                        <header class="timeline-header">
+                            <span class="tag is-medium is-primary">Litemint Genesis</span>
+                        </header>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-image is-white is-32x32">
+                                <img src="img/logo.png">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">July 2018</p>
+                                <p>Development started</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-primary is-image is-32x32">
+                                <img src="img/google_play.svg">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">December 2018</p>
+                                <p>Google Play alpha release.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-primary is-icon">
+                                <i class="fa fa-flag"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">December 26, 2018</p>
+                                <p><a href="https://play.google.com/store/apps/details?id=com.litemint.app">Google Play public release.</a></p>
+                            </div>
+                        </div>
+                        <header class="timeline-header">
+                            <span class="tag is-primary">2019</span>
+                        </header>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-primary is-icon">
+                                <i class="fa fa-flag"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">February 21, 2019</p>
+                                <p><a href="https://litemint.app">Web Wallet release</a></p>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-icon is-primary">
+                                <i class="fa fa-flag"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">February, 2019</p>
+                                <div class="dropdown is-hoverable">
+                                    <div class="dropdown-trigger">
+                                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <span>Platform releases</span>
+                                            <span class="icon is-small">
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <div class="dropdown-item">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-android fa-lg" aria-hidden="true"></i>
+                                                </span>
+                                                &nbsp;<a href="https://play.google.com/store/apps/details?id=com.litemint.app">Android</a>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-apple fa-lg" aria-hidden="true"></i>
+                                                </span>
+                                                &nbsp;<a href="https://itunes.apple.com/app/litemint/id1454801150">iOS</a>
+                                            </div>
+                                            <hr class="dropdown-divider">
+                                            <div class="dropdown-item">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-windows fa-lg" aria-hidden="true"></i>
+                                                </span>
+                                                &nbsp;<a href="https://github.com/litemint/litemint/releases">Windows Setup</a>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-windows fa-lg" aria-hidden="true"></i>
+                                                </span>
+                                                &nbsp;<a href="https://github.com/litemint/litemint/releases">Windows</a>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-linux fa-lg" aria-hidden="true"></i>
+                                                </span>
+                                                &nbsp;<a href="https://github.com/litemint/litemint/releases">Linux</a>
+                                            </div>
+                                            <div class="dropdown-item">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-apple fa-lg" aria-hidden="true"></i>
+                                                </span>
+                                                &nbsp;<a href="https://github.com/litemint/litemint/releases">Mac OS</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-primary is-image is-32x32">
+                                <img src="https://app.litemint.com/res/img/stellar.png">
+                            </div>
+                            <div class="timeline-content ">
+                                <p class="heading">March, 2019</p>
+                                <p>Stellar DEX trading</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-primary is-image is-32x32">
+                                <img src="https://app.litemint.com/res/img/gamepad.png">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">June, 2019</p>
+                                <p><a href="https://litemint.app">Instant Games Platform</a></p>
+                            </div>
+                        </div>
+                        <div class="timeline-item ">
+                            <div class="timeline-marker is-image is-32x32">
+                                <img src="https://app.litemint.com/res/img/market.png">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">July, 2019</p>
+                                <p>Collectibles and In-App Purchases!</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item ">
+                            <div class="timeline-marker is-image is-32x32">
+                                <img src="https://litemint.com/img/binance.png">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">August, 2019</p>
+                                <p>Binance Accounts and BNB Anchor</p>
+                            </div>
+                        </div>
+                        <header class="timeline-header">
+                            <span class="tag is-info">To be continued...</span>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section features">
+        <div class="container">
+            <p class="title is-2">Get in Touch</p>
+            <div class="columns is-tablet is-multiline">
+                <div class="column is-4">
+                    <div class="content box">
+                        <p class="title is-size-4">litemint <span class="command">--help</span></p>
+                        <!--<p>
+                            Use the following links and resources for technical assistance.
+                        </p>
+                        <p>
+                            <a class="button is-primary" href="#">
+                                <span class="icon">
+                                    <i class="fa fa-question-circle"></i>
+                                </span>
+                                <span>Documentation</span>
+                            </a>
+                            <a class="button is-info" href="#">
+                                <span>FAQ</span>
+                            </a>
+                        </p>-->
+                        <p>
+                            Feel free to write to <a href="mailto:support@litemint.com">support@litemint.com</a> for any usability question.
+                        </p>
+                        <p class="title is-size-5">Security</p>
+                        <p>
+                            For security related issue and critical bugs please send an email to <a href="mailto:security@litemint.com">security@litemint.com</a>
+                        </p>
+                        <p class="title is-size-5">Business &amp; Press</p>
+                        <p>
+                            For your business or press related enquiries please write to <a href="mailto:hello@litemint.com">hello@litemint.com</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="column is-4">
+                    <div class="box">
+                        <div class="content">
+                            <p class="title is-size-4">litemint <span class="command">--dev</span></p>
+                            <span><b>Litemint</b> is an original <a href="https://github.com/litemint/litemint/blob/master/LICENSE" target="_blank">MIT</a> licensed project created by <a href="https://twitter.com/fredericrezeau" target="_blank">Frederic Rezeau</a> and distributed by Litemint LLC.</span>
+                            <div class="is-offset">
+                                <a href="https://twitter.com/FredericRezeau?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true" data-size="large">
+                                    Follow @FredericRezeau
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="title is-size-5">GitHub</p>
+                            <div class="is-offset">
+                                <a class="github-button" href="https://github.com/litemint/litemint" data-icon="octicon-star" data-size="large" aria-label="Star litemint/litemint on GitHub">Star</a>
+                                <a class="github-button" href="https://github.com/litemint/litemint/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue litemint/litemint on GitHub">Issue</a>
+                            </div>
+                            <span>Pull Requests | Bug Reports</span>
+                        </div>
+                        <div class="content">
+                            <p class="title is-size-5">Social</p>
+                            <div class="is-offset">
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button" href="https://twitter.com/LitemintHQ" target="_blank">
+                                            <span class="icon">
+                                                <i class="fa fa-twitter"></i>
+                                            </span>
+                                            <span>
+                                                Twitter
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button" href="https://www.facebook.com/litemint" target="_blank">
+                                            <span class="icon">
+                                                <i class="fa fa-facebook"></i>
+                                            </span>
+                                            <span>
+                                                Facebook
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="fb-page" data-href="https://www.facebook.com/litemint" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/litemint" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/litemint">Litemint LLC</a></blockquote></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="content box is-borderless">
+                        <p class="title is-size-5">Trademark</p>
+                        <p>
+                            LITEMINT LLC owns all Litemint-related trademarks, service marks, and graphic logos and the names of all Litemint projects are trademarks of LITEMINT LLC.
+                        </p>
+                        <p>
+                            You may contact LITEMINT LLC with any questions about the <a href="terms.html">brand policy and trademarks</a>.
+                        </p>
+                        <div class="message">
+                            <article class="message is-primary">
+                                <div class="content message-body">
+                                    <p>
+                                        <b>LITEMINT LLC.</b><br />
+                                        16192 Coastal Highway<br />
+                                        Lewes<br />
+                                        Delaware 19958<br />
+                                        United States
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item intern-logo">
+                        <svg width="40" height="40" id="litemint" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 952.9 961.36"><title>Litemint Logo</title><path d="M895.65,129.64v1c-166.36,26.43-183.28,231.41-308,372.24C431.23,679.49,254.25,666.62,162.33,884.32c-16.72-426.95,309.32-666,375.33-702.67-189,55-441.34,368.61-424.28,671.06C92.86,823.24-156.76,367.51,259.23,88.84,426.57-23.26,700,9.94,895.65,129.64Z" transform="translate(-20.46 -20.13)" style="fill:#2ac1bc;fill-rule:evenodd" /><path d="M827.31,197C934.47,286,1000,448.31,963,639.56L827.31,605.91C870.24,444,765.69,324.14,748.78,315.25,749,304.69,801.7,211.66,827.31,197ZM718.18,370.32C905.81,601.16,615.31,910.36,362.24,714,472.82,656.83,653,538.2,718.18,370.32Zm98.93,267.2,136.67,33.66C852.26,944.34,595.86,1008.83,434.65,972l38.76-136.66C639.09,863,777,749.05,817.11,637.52ZM307.16,748.68c41.87,34.76,81.39,62.39,134.63,80.57L403,963.87C339.11,948.8,252.16,896,211.29,854.75,227.22,815.33,282.32,761.46,307.16,748.68Z" transform="translate(-20.46 -20.13)" style="fill:#ffdd57;fill-rule:evenodd" /></svg>
+                    </div>
+                    <div class="level-item">
+                        <span class="copyright">
+                            &copy; 2019 <a href="https://litemint.com">LITEMINT LLC</a>. All rights reserved.
+                        </span>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <a href="privacy.html" alt="Privacy Privacy">Privacy Policy</a>
+                    </div>
+                    <div class="level-item">
+                        <a href="terms.html" alt="Terms of Service">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery.mobile.1.4.5.custom.min.js"></script>
+    <script src="js/jquery.corner.js"></script>
+    <script src="index.js?v=1.3"></script>
+
+    <!-- Event snippet for conversion page -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-772332148/QIE-CIK66pIBEPS0o_AC' });
+    </script>
+</body>
+</html>

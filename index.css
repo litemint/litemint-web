@@ -1,0 +1,92 @@
+/*
+    Custom CSS for Litemint Website
+*/
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('fonts/Rajdhani/Rajdhani-Bold.ttf');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -ms-touch-action: none;
+}
+
+.site-navbar {
+    background: white !important;
+    transition-duration: 172ms
+}
+
+.site-navbar-scrolled {
+    box-shadow: 0 2px 4px 0 rgba(70,56,83,0.1);
+}
+
+.rounded {
+    border-radius: 2%;
+}
+
+.command {
+    color: #2ac1bc;
+    font-family: Rajdhani;
+}
+
+.is-not-decorated:hover{
+    text-decoration:none;
+}
+
+span.part1 {
+    font-family: Rajdhani;
+    color: #ffdd57;
+}
+
+span.part2 {
+    font-family: Rajdhani;
+    color: #2ac1bc;
+}
+
+.site-menu a:hover, .site-menu a:visited, .site-menu a:active, .site-menu a:link, .site-menu a:focus {
+    outline: none;
+    text-decoration: none
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 15px
+}
+
+.is-framed-7 {
+    margin:7px
+}
+
+.is-radius-10 {
+    border-radius: 10px;
+}
+
+.is-offset {
+    margin-top: 10px
+}
+
+.box.is-transparent {
+    background: none
+}
+
+.box.is-borderless {
+    border: none;
+    border-radius: 0;
+    box-shadow: none
+}
+
+a:focus{
+    outline:none;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
